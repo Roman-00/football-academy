@@ -1,0 +1,25 @@
+{
+  "name": "football-academy",
+  "version": "1.0.0",
+  "description": "Академия футбола",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roman-00/football-academy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roman-00/football-academy/issues"
+  },
+  "homepage": "https://github.com/Roman-00/football-academy#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-sass": "^4.0.2"
+  }
+}

@@ -3,6 +3,16 @@
   max-width: 1140px;
   margin: auto; }
 
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -356,6 +366,16 @@ img {
 
 .section {
   padding-top: 55px; }
+  .section-title__image {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .section-title__image::before, .section-title__image::after {
+      content: '';
+      height: 1px;
+      width: 55px;
+      background: #33b7d2;
+      margin: 0px 10px; }
 
 @font-face {
   font-family: 'Roboto Black';
@@ -590,26 +610,144 @@ img {
     .social__icons-substrate:hover {
       background: #ffd801; }
 
+.training {
+  padding-bottom: 58px;
+  background: #f2f8f9; }
+  .training__wrap {
+    margin-bottom: 50px; }
+  .training__section-title {
+    margin-bottom: 30px; }
+  .training__title-color {
+    font-family: 'Roboto Black', sans-serif;
+    color: #33b7d2; }
+  .training__title-heading {
+    display: block;
+    margin-bottom: 13px;
+    font-family: 'Roboto Black', sans-serif;
+    font-size: 63px;
+    font-weight: 400;
+    color: #33b7d2;
+    text-transform: uppercase; }
+  .training__title-description {
+    display: block;
+    margin-bottom: 11px;
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #3f3f3f;
+    text-align: center; }
+  .training__about-text {
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: justify;
+    color: #3f3f3f; }
+  .training__heading-text {
+    display: block;
+    font-family: 'Roboto Black', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #33b7d2; }
+  .training-title__image {
+    margin-bottom: 30px; }
+  .training-title__heading {
+    margin-bottom: 8px;
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #2b2b2b;
+    text-align: center; }
+  .training-title__text {
+    max-width: 354px; }
+  .training__about {
+    max-width: 555px; }
+  .training__video-title {
+    max-width: 190px;
+    font-family: 'Roboto Black', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #33b7d2;
+    text-align: center;
+    text-transform: uppercase; }
+  .training__video-play {
+    width: 100%;
+    max-width: 73px;
+    height: 73px;
+    margin: auto;
+    background: #ffd801;
+    border-radius: 100px;
+    cursor: pointer; }
+  .training__video-images {
+    margin: 19px 32px; }
+
+#player {
+  width: 200px;
+  height: 200px; }
+
+.text__about-bold {
+  font-family: 'Roboto Bold', sans-serif;
+  font-weight: 700; }
+
+.card__training-images {
+  display: block;
+  text-align: center; }
+  .card__training-images::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 124px;
+    margin: auto;
+    margin-top: 14px;
+    margin-bottom: 24px;
+    background: #33b7d2; }
+
+.card__training-description {
+  display: block;
+  font-family: 'Roboto Medium', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center; }
+
+.card__description-size {
+  max-width: 300px; }
+
 @media screen and (max-width: 1270px) {
   html {
     font-size: 12px; }
   .header__select {
     margin-left: 15px; }
   .contacts {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .training-title__text {
+    margin-right: 30px; } }
 
 @media screen and (max-width: 1190px) {
   .header__select {
     display: none; }
   .contacts__phone {
     font-size: 16px;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  .card__training-description {
+    max-width: 230px;
+    margin-bottom: 40px; }
+  .training-title__text {
+    margin-right: 30px; } }
 
 @media screen and (max-width: 992px) {
   .header__title {
-    font-size: 62px; }
+    font-size: 58px; }
   .contacts__button {
     display: none; }
+  .training-title__heading {
+    font-size: 25px; }
   .nav__item {
     margin-right: 26px; }
     .nav__item-border::after {
@@ -626,15 +764,33 @@ img {
     max-width: 530px;
     margin: auto; }
   .nav {
-    display: none; } }
+    display: none; }
+  .training-title__heading {
+    font-size: 18px; } }
 
 @media screen and (max-width: 570px) {
   .header__title {
-    font-size: 32px; }
+    font-size: 28px; }
     .header__title-description {
       font-size: 18px; }
+  .header__social {
+    margin-top: 40px; }
   .form__button {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .training__video-title {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px; }
+  .training-title__heading {
+    font-size: 18px; }
+  .training__title-heading {
+    font-size: 53px;
+    text-align: center; }
+  .training__title-description {
+    font-size: 16px; }
+  .training__heading-text {
+    font-size: 38px;
+    text-align: center; } }
 
 @media screen and (max-width: 375px) {
   .header__input {
@@ -642,4 +798,10 @@ img {
   .header__title {
     font-size: 25px; }
   .social__text {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .training__title-heading {
+    font-size: 43px; }
+  .training__title-description {
+    font-size: 14px; }
+  .training__heading-text {
+    font-size: 28px; } }

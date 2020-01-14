@@ -13,6 +13,9 @@
   align-items: center;
   justify-content: space-between; }
 
+.col-30 {
+  flex-basis: 31%; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -330,6 +333,12 @@ template {
   cursor: pointer; }
   .button-primary {
     background: #ffd801; }
+  .button-outline {
+    padding: 14px 36px;
+    border: 1px solid #ffd801;
+    border-radius: 100px;
+    background: transparent;
+    color: #ffffff; }
 
 .input {
   font-family: 'Roboto Light', sans-serif;
@@ -715,6 +724,80 @@ img {
 .card__description-size {
   max-width: 300px; }
 
+.groups {
+  padding-top: 53px;
+  padding-bottom: 46px; }
+  .groups__row {
+    margin-top: 29px;
+    justify-content: center; }
+  .groups__col-30 {
+    margin-right: 28px; }
+  .groups-title__heading {
+    margin-bottom: 10px;
+    font-family: 'Roboto Regular'sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #3f3f3f;
+    text-align: center; }
+  .groups__button {
+    color: #ffd801;
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 13px;
+    font-weight: 400; }
+    .groups__button:hover {
+      background: #ffd801;
+      color: #3f3f3f; }
+  .groups__section-title {
+    margin-bottom: 30px; }
+
+.card__groups {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 98px; }
+  .card__groups:hover {
+    border: 2px solid #ffd801; }
+  .card__groups-one {
+    background: url("../img/groups/card1.jpg") no-repeat center;
+    background-size: cover; }
+  .card__groups-two {
+    background: url("../img/groups/card2.jpg") no-repeat center;
+    background-size: cover; }
+  .card__groups-three {
+    background: url("../img/groups/card3.jpg") no-repeat center;
+    background-size: cover; }
+  .card__groups-four {
+    background: url("../img/groups/card4.jpg") no-repeat center;
+    background-size: cover; }
+  .card__groups-five {
+    background: url("../img/groups/card5.jpg") no-repeat center;
+    background-size: cover; }
+  .card__groups-title {
+    padding-top: 86px;
+    margin-bottom: 13px;
+    font-family: 'Roboto Black', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #ffd801;
+    text-transform: uppercase; }
+  .card__groups-description {
+    max-width: 260px;
+    margin-top: 0px;
+    margin-bottom: 11px;
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #f2f8f9;
+    line-height: 22px;
+    text-align: center; }
+  .card__groups-pricetag {
+    margin-bottom: 23px;
+    font-family: 'Roboto Black', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #f2f8f9; }
+
 @media screen and (max-width: 1270px) {
   html {
     font-size: 12px; }
@@ -735,6 +818,22 @@ img {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: top; }
+  .col-30 {
+    flex: 1 1 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+    padding: 0 15px; }
+  .groups__row {
+    margin-top: 0;
+    justify-content: flex-start; }
+  .groups__col-30 {
+    margin-right: 0; }
+  .card__groups {
+    margin-bottom: 29px; }
   .card__training-description {
     max-width: 230px;
     margin-bottom: 40px; }
@@ -748,10 +847,29 @@ img {
     display: none; }
   .training-title__heading {
     font-size: 25px; }
+  .groups__row {
+    margin-top: 0;
+    justify-content: space-between; }
+  .groups__col-30 {
+    margin-right: 0; }
   .nav__item {
     margin-right: 26px; }
     .nav__item-border::after {
-      display: none; } }
+      display: none; }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: top; }
+  .col-30 {
+    flex: 1 1 calc(100% - 30px);
+    max-width: calc(100% - 30px);
+    padding: 0 15px; }
+  .card__groups {
+    width: 100%;
+    max-width: 362px;
+    margin: auto;
+    margin-bottom: 29px; } }
 
 @media screen and (max-width: 760px) {
   .header__title {
@@ -766,7 +884,9 @@ img {
   .nav {
     display: none; }
   .training-title__heading {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .row {
+    justify-content: center; } }
 
 @media screen and (max-width: 570px) {
   .header__title {
@@ -790,7 +910,11 @@ img {
     font-size: 16px; }
   .training__heading-text {
     font-size: 38px;
-    text-align: center; } }
+    text-align: center; }
+  .row {
+    justify-content: center; }
+  .card__groups {
+    margin-right: 0px; } }
 
 @media screen and (max-width: 375px) {
   .header__input {
@@ -804,4 +928,11 @@ img {
   .training__title-description {
     font-size: 14px; }
   .training__heading-text {
-    font-size: 28px; } }
+    font-size: 28px; }
+  .card__groups {
+    margin-left: 0px; }
+    .card__groups-title {
+      font-size: 24px; }
+    .card__groups-description {
+      max-width: 200px;
+      font-size: 14px; } }

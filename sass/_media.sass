@@ -23,7 +23,26 @@
     display: flex
     justify-content: space-around
     flex-wrap: wrap
+  .row
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    align-items: top
+  .col
+    &-30
+      flex: 1 1 calc(50% - 30px)
+      max-width: calc(50% - 30px)
+      padding: 0 15px
+  .groups
+    &__row
+      margin-top: 0
+      justify-content: flex-start
+    &__col
+      &-30
+        margin-right: 0
   .card
+    &__groups
+      margin-bottom: 29px
     &__training
       &-description
         max-width: 230px
@@ -43,12 +62,35 @@
     &-title
       &__heading
         font-size: 25px
+  .groups
+    &__row
+      margin-top: 0
+      justify-content: space-between
+    &__col
+      &-30
+        margin-right: 0
   .nav
     &__item
       margin-right: 26px
       &-border
         &::after
           display: none
+  .row
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    align-items: top
+  .col
+    &-30
+      flex: 1 1 calc(100% - 30px)
+      max-width: calc(100% - 30px)
+      padding: 0 15px
+  .card
+    &__groups
+      width: 100%
+      max-width: 362px
+      margin: auto
+      margin-bottom: 29px
 @media screen and ( max-width:760px )
   .header
     &__title
@@ -66,6 +108,8 @@
     &-title
       &__heading
         font-size: 18px
+  .row
+    justify-content: center
 @media screen and (max-width: 570px )
   .header
     &__title
@@ -96,6 +140,11 @@
       &-text
         font-size: 38px
         text-align: center
+  .row
+    justify-content: center
+  .card
+    &__groups
+      margin-right: 0px
 @media screen and ( max-width:375px )
   .header
     &__input
@@ -114,6 +163,14 @@
     &__heading
       &-text
         font-size: 28px
+  .card
+    &__groups
+      margin-left: 0px
+      &-title
+        font-size: 24px
+      &-description
+        max-width: 200px
+        font-size: 14px
   
   
   

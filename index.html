@@ -11,20 +11,23 @@
 <body>
   <header class="header" id="header">
     <div class="container">
-      <div class="menu">
-        <a href="index.html" class="logo__link"><span class="logo menu__logo"><img src="img/logo.png" alt="Logo"></span></a>
-        <div class="city menu__city">
-          <select name="city" id="city">
-            <option selected class="city__primaty">Астана</option>
-            <option>Алматы</option>
-            <option>Шымкент</option>
-          </select>
+      <div class="menu header__menu">
+        <div class="logo header__logo">
+          <img src="img/logo.png" alt="Logo">
+          <div class="select header__select">
+            <select name="city" id="select">
+              <option value="Астана" class="select__option">Астана</option>
+              <option value="Алматы" class="select__option">Алматы</option>
+              <option value="Шымкент" class="select__option">Шымкент</option>
+            </select>
+          </div>
         </div>
-        <!-- /.city menu__city -->
+        <!-- /.logo header__logo -->
+        <!-- /.select header__select -->
         <nav class="nav menu__nav">
           <a href="index.html" class="nav__item nav__item-border">О нас</a>
           <!-- /.nav__item -->
-          <a href="#projects" class="nav__item nav__item-border">Статистика</a>
+          <a href="#projects" class="nav__item nav__item-border nav__item-active">Статистика</a>
           <!-- /.nav__item -->
           <a href="#steps" class="nav__item nav__item-border">Новости</a>
           <!-- /.nav__item -->
@@ -32,18 +35,63 @@
           <!-- /.nav__item -->
         </nav>
         <div class="contacts menu__contacts">
-          <a href="tel:+77024407007" class="phone contacts__phone">
-            +7 702 440 70 07
+          <a href="tel:+79997683299" class="phone contacts__phone">
+            <span class="contacts__phone-color">+7 702</span> 440-70-07
           </a>
-          <button class="button contacts__button button--primary button--identation" data-toggle="modal">
+          <button class="button contacts__button button-primary" data-toggle="modal">
             Перезвоните мне
           </button>
         </div>
-        <!-- /.nav -->
       </div>
-      <!-- /.menu -->
+      <!-- /.menu .header__menu -->
+
+      <div class="header__text">
+        <h1 class="header__title">
+          Академия Футбола
+        </h1>
+        <!-- /.header__title -->
+        <p class="header__title-description">
+          для детей от 3 до 16 лет
+        </p>
+        <!-- /.header__title-description -->
+      </div>
+      <!-- /.heade__text -->
+      <form action="#" class="form header__form">
+        <div class="header__input-group">
+          <input type="text" name="userName" class="input form__input header__input" id="header-user-name" placeholder="Ваше имя">
+          <input type="tel" name="userPhone" class="input form__input header__input" id="header-user-phone" placeholder="Номер телефона">
+        </div>
+        <!-- /.control__input-group -->
+        <button class="button button-primary form__button">
+          Записаться на тренировку
+        </button> 
+        <!-- /.button from__button -->
+      </form>
+      <!-- /.form header__form -->
+
+      <div class="social header__social">
+        <p class="social__text">
+          Поделись с друзьями, им будет интересно!
+        </p>
+        <!-- /.social__text -->
+        <div class="social__icons">
+          <div class="social__icons-substrate social__active">
+            <img src="img/vk.png" alt="Вконтакте" class="social__icons-images">
+          </div>
+          <!-- /.social__icons-substrate -->
+          <div class="social__icons-substrate">
+            <img src="img/instagram.png" alt="Инстаграм" class="social__icons-images">
+          </div>
+          <!-- /.social__icons-substrate -->
+          <div class="social__icons-substrate">
+            <img src="img/youtube.png" alt="Ютуб" class="social__icons-images">
+          </div>
+          <!-- /.social__icons-substrate -->
+        </div>
+        <!-- /.social__icons -->
+      </div>
+      <!-- /.social header__social -->
     </div>
-    <!-- /.container -->
   </header>
   <!-- /#header.header -->
 </body>

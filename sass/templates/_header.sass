@@ -1,20 +1,141 @@
 .header
-  padding-top: 15px
+  padding: 15px 0px 90px 0px
   background: url('../img/header-bg.jpg') no-repeat center
-.menu
-  display: flex
-  align-items: center
-.nav
-  &__item
-    font-family: 'Roboto-Light'
-    font-size: 15px
+  background-size: cover
+  &__menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__logo
+    display: flex
+    align-items: center
+  &__select
+    position: relative
+    margin-left: 35px
+    &::before
+      content: ''
+      position: absolute
+      top: 0.83rem
+      right: 0.7rem
+      width: 20px
+      height: 20px
+      background: url('../img/arrow.svg') no-repeat center
+      pointer-events: none
+  &__text
+    text-align: center
+  &__title
+    margin-bottom: 3px
+    font-family: 'Roboto Black', sans-serif
+    font-size: 72px
+    font-weight: 400
     line-height: 24px
+    color: $blue
+    text-transform: uppercase
+    &-description
+      font-family: 'Roboto Black', sans-serif
+      font-size: 36px
+      font-weight: 400
+      color: $lite
+      text-transform: uppercase
+  &__form
+    margin-top: 42px
+    margin-bottom: 60px
+    text-align: center
+  &__input
+    color: $dark
+    padding: 15px 124px 15px 27px
+    margin-right: 7px
+    &-group
+      margin-bottom: 21px
+.form
+  &__button
+    display: block
+    margin: auto
+    padding: 22px 34px
+    font-family: 'Roboto Medium',sans-serif
+    font-size: 16px
+    font-weight: 500
+    color: $dark
+#select
+  padding: 8px 22px
+  background: transparent
+  border: 1px solid $lite
+  border-radius: 100px
+  color: $lite
+  font-family: 'Roboto Light', sans-serif
+  font-size: 15px
+  font-weight: 300
+  line-height: 24px
+  -moz-appearance: none
+  -webkit-appearance: none
+  outline: none
+  cursor: pointer
+.select
+  &__option
+    color: $dark
+.menu
+  margin-bottom: 68px
+.nav
+  margin-left: 27px
+  &__item
+    margin-right: 37px
+    font-family: 'Roboto Light', sans-serif
+    font-size: 15px
     font-weight: 300
     color: $lite
     text-decoration: none
-#city
-  font-family: 'Roboto-Light'
-  font-weight: 300
-  font-size: 15px
-  line-height: 24px
-
+    &-active
+      color: $yellow
+      border-bottom: 1px solid $yellow
+    &:hover
+      color: $yellow
+      border-bottom: 1px solid $yellow
+    &-border
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        width: 1px
+        height: 27px
+        margin-left: 19px
+        background: rgba($lite, 0.4)
+.phone
+  font-family: 'Roboto Bold', sans-serif
+  font-weight: 700
+  font-size: 19px
+  color: $lite
+  text-decoration: none
+.contacts
+  &__button
+    padding: 16px 23px
+    background: $yellow
+    color: $secondary
+    text-transform: uppercase
+  &__phone
+    margin-right: 13px
+    &-color
+      font-family: 'Roboto Light', sans-serif
+      font-weight: 300
+      color: $yellow
+.social
+  &__active
+    background: $yellow
+  &__text
+    font-family: 'Roboto Light'
+    font-size: 18px
+    font-weight: 300
+    line-height: 17px
+    color: $lite
+    text-align: center
+  &__icons
+    display: flex
+    justify-content: center
+    &-substrate
+      margin-right: 6px
+      padding: 10px 11px
+      border: 1px solid $lite
+      border-radius: 100px
+      cursor: pointer
+      &:hover
+        background: $yellow

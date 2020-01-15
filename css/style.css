@@ -331,6 +331,8 @@ template {
   outline: 0;
   outline-offset: 0;
   cursor: pointer; }
+  .button:hover {
+    background: #ffba01; }
   .button-primary {
     background: #ffd801; }
   .button-outline {
@@ -559,9 +561,6 @@ img {
     font-weight: 300;
     color: #ffffff;
     text-decoration: none; }
-    .nav__item-active {
-      color: #ffd801;
-      border-bottom: 1px solid #ffd801; }
     .nav__item:hover {
       color: #ffd801;
       border-bottom: 1px solid #ffd801; }
@@ -595,9 +594,6 @@ img {
     font-family: 'Roboto Light', sans-serif;
     font-weight: 300;
     color: #ffd801; }
-
-.social__active {
-  background: #ffd801; }
 
 .social__text {
   font-family: 'Roboto Light';
@@ -754,7 +750,8 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 98px; }
+  padding-bottom: 98px;
+  border: 2px solid transparent; }
   .card__groups:hover {
     border: 2px solid #ffd801; }
   .card__groups-one {
@@ -797,6 +794,81 @@ img {
     font-size: 24px;
     font-weight: 400;
     color: #f2f8f9; }
+
+.ticket {
+  padding-top: 52px;
+  padding-bottom: 62px; }
+  .ticket__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 29px; }
+  .ticket__section-title {
+    text-align: center; }
+  .ticket-title__heading {
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #2b2b2b; }
+
+.card__title-light {
+  padding: 29px 61px 28px 61px;
+  background: #67b0bf; }
+
+.card__title-intensive {
+  padding: 29px 32px 28px 32px;
+  background: #33b7d2; }
+
+.card__ticket {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  max-width: 360px;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.17);
+  border: 1.5px solid #67b0bf; }
+  .card__ticket-one {
+    border: 1.5px solid #67b0bf; }
+  .card__ticket-two {
+    border: 1.5px solid #33b7d2; }
+  .card__ticket-left {
+    margin-right: 28px; }
+  .card__ticket-button {
+    font-family: 'Roboto Medium', sans-serif;
+    margin-bottom: 38px;
+    padding: 21px 34px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2b2b2b; }
+    .card__ticket-button:hover {
+      background: #ffba01; }
+  .card__ticket-title {
+    display: block;
+    font-family: 'Roboto Bold', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    z-index: 1; }
+  .card__ticket-free {
+    margin-bottom: 12px;
+    font-family: 'Roboto Bold', sans-serif;
+    color: #67b0bf;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .card__ticket-list {
+    margin-top: 14px; }
+  .card__ticket-text {
+    display: block;
+    margin-bottom: 17px;
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center; }
+
+.card__title-transform {
+  text-transform: uppercase; }
 
 @media screen and (max-width: 1270px) {
   html {
@@ -865,11 +937,17 @@ img {
     flex: 1 1 calc(100% - 30px);
     max-width: calc(100% - 30px);
     padding: 0 15px; }
+  .ticket__wrap {
+    justify-content: space-around; }
   .card__groups {
     width: 100%;
     max-width: 362px;
     margin: auto;
-    margin-bottom: 29px; } }
+    margin-bottom: 29px; }
+  .card__ticket {
+    margin-bottom: 20px; }
+    .card__ticket-left {
+      margin-right: 0; } }
 
 @media screen and (max-width: 760px) {
   .header__title {
@@ -912,7 +990,18 @@ img {
     font-size: 38px;
     text-align: center; }
   .row {
+    margin-right: 22px;
     justify-content: center; }
+  .card__title-light {
+    padding: 29px 63px 28px 63px; }
+  .card__title-intensive {
+    padding: 29px 42px 28px 42px; }
+  .card__ticket-free {
+    font-size: 14px; }
+  .card__ticket-title {
+    font-size: 20px; }
+  .card__ticket-button {
+    font-size: 14px; }
   .card__groups {
     margin-right: 0px; } }
 
@@ -929,10 +1018,24 @@ img {
     font-size: 14px; }
   .training__heading-text {
     font-size: 28px; }
+  .ticket-title__heading {
+    font-size: 24px; }
+  .row {
+    width: 100%; }
   .card__groups {
     margin-left: 0px; }
     .card__groups-title {
       font-size: 24px; }
     .card__groups-description {
       max-width: 200px;
-      font-size: 14px; } }
+      font-size: 14px; }
+  .card__ticket-button {
+    font-size: 12px; }
+  .card__ticket-free {
+    font-size: 12px; }
+  .card__title-light {
+    padding: 29px 35px 28px 35px; }
+  .card__title-intensive {
+    padding: 29px 15px 28px 15px; }
+  .col-30 {
+    width: 100%; } }

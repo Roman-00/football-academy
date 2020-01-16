@@ -56,7 +56,7 @@
         <!-- /.header__title-description -->
       </div>
       <!-- /.heade__text -->
-      <form action="#" class="form header__form">
+      <form action="send.php" class="form header__form">
         <div class="header__input-group">
           <input type="text" name="userName" class="input form__input header__input" id="header-user-name" placeholder="Ваше имя">
           <input type="tel" name="userPhone" class="input form__input header__input" id="header-user-phone" placeholder="Номер телефона">
@@ -240,7 +240,7 @@
                 от 14 290 тенге
               </span> 
               <!-- /.card__groups-pricetag -->
-              <button class="button button-outline groups__button">
+              <button class="button button-outline groups__button" data-toggle="modal-beginer">
                 Подробнее
               </button> 
               <!-- /.button button-outline -->
@@ -408,7 +408,7 @@
               Бесплатная пробная тренировка
             </p>
             <!-- /.card__ticket-free -->
-            <button class="button button-primary card__ticket-button">
+            <button class="button button-primary card__ticket-button" data-toggle="modal-intensive">
               Записаться на тренировку
             </button> 
             <!-- /.button button-primary -->
@@ -473,7 +473,7 @@
         <div class="logo header__logo">
           <img src="img/logo.png" alt="Logo">
           <div class="select header__select">
-            <select name="city" id="select">
+            <select name="select" id="select">
               <option value="Астана" class="select__option">Астана</option>
               <option value="Алматы" class="select__option">Алматы</option>
               <option value="Шымкент" class="select__option">Шымкент</option>
@@ -523,7 +523,108 @@
   </footer>
   <!-- /#footer.footer -->
 
+  <div class="modal">
+    <div class="modal__dialog">
+      <button class="modal__close">
+
+      </button> 
+      <!-- /.modal__close -->
+      <h3 class="modal__title">
+        Обратный звонок 
+      </h3>
+      <form action="send.php" method="POST" class="form modal__form">
+        <div class="input-group modal__input-group modal__input-aside">
+          <input type="text" name="userName" class="input modal__input" id="modal-user-name" placeholder="Ваше имя">
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <div class="input-group modal__input-group modal__input-top">
+          <input type="tel" name="userPhone" class="input modal__input" id="modal-user-phone" placeholder="Ваш номер телефона">
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <button type="submit" class="button button-primary modal__button">
+          Перезвоните мне
+        </button> 
+        <!-- /.button button-primary modal__button -->
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal --> 
+
+  <div class="modal-beginer">
+    <div class="modal__dialog">
+      <button class="modal-beginer__close">
+
+      </button> 
+      <!-- /.modal__close -->
+      <h3 class="modal-beginer__title">
+        Информация о «Beginners»
+      </h3>
+      <form action="send.php" method="POST" class="form modal-beginer__form">
+        <div class="input-group modal__input-group modal__input-aside">
+          <input type="text" name="userName" class="input modal__input" id="modal-beginer-user-name" placeholder="Ваше имя">
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <div class="input-group modal__input-group modal__input-top">
+          <input type="tel" name="userPhone" class="input modal__input" id="modal-beginer-user-phone" placeholder="Ваш номер телефона">
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <button type="submit" class="button button-primary modal__button">
+          Отправить заявку
+        </button> 
+        <!-- /.button button-primary modal__button -->
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal-beginer --> 
+
+  <div class="modal-intensive">
+    <div class="modal__dialog">
+      <button class="modal-intensive__close">
+
+      </button> 
+      <!-- /.modal__close -->
+      <h3 class="modal-intensive__title">
+        Абонемент «Intensive»
+      </h3>
+      <form action="send.php" method="POST" class="form modal-intensive__form">
+        <div class="input-group modal__input-group modal__input-aside">
+          <input type="text" name="userName" class="input modal__input" id="modal-intensive-user-name" placeholder="Ваше имя">
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <div class="input-group modal__input-group modal__input-top">
+          <input type="tel" name="userPhone" class="input modal__input" id="modal-intensive-user-phone" placeholder="Ваш номер телефона">
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <button type="submit" class="button button-primary modal__button">
+          Отправить заявку
+        </button> 
+        <!-- /.button button-primary modal__button -->
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal-intensive --> 
+
+  <div id="ownModal" class="ownModal">
+    <div class="ownModal__dialoge">
+      <span class="ownModal__text">
+        Форма отправленна, мы свяжимся с вами через 10 минут
+      </span> 
+      <!-- /.ownModal__text -->
+      <button class="button  ownModal__close">Ок</button>
+    </div>
+    <!-- /.ownModal__dialoge -->
+  </div>
+  <!-- /#ownModal.ownModal -->
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="https://www.youtube.com/iframe_api"></script>
   <script src="js/main.js"></script>
 </body>

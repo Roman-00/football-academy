@@ -1,0 +1,64 @@
+.modal-beginer
+  opacity: 0
+  visibility: hidden
+  position: fixed
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 100%
+  background-color: rgba($dark, 0.6)
+  z-index: 199
+  &--visible
+    opacity: 1
+    visibility: visible
+  &__dialog
+    position: relative
+    max-width: 397px
+    padding-bottom: 35px
+  &__close
+    position: absolute
+    right: 0
+    top: 0
+    width: 28px
+    height: 28px
+    margin: -29px -29px 14px 14px
+    background: transparent url('../img/close.svg') no-repeat center
+    border: none
+    cursor: pointer
+    outline: none
+  &__title
+    margin: 0
+    padding: 20px 52.1px
+    background: $blue
+    font-family: 'Roboto Medium', sans-serif
+    font-size: 23px
+    font-weight: 500
+    color: $lite
+  &__form
+    padding: 0px 0px 30px 0px
+    background: url('../img/modal/modal-bg.jpg') no-repeat center bottom
+  &__input
+    padding: 13px 137px 14px 25px
+    &::placeholder
+      color: $dark
+    &-top
+      padding-top: 15px
+    &-aside
+      padding-top: 45px
+  &__button
+    display: block
+    margin: 0 auto
+    margin-top: 25px
+    padding: 23px 71px
+    font-family: 'Roboto Bold', sans-serif
+    font-size: 16px
+    font-weight: 700
+    color: $ggren
+.input
+  &-group
+    text-align: center

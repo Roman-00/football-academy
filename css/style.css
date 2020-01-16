@@ -1198,7 +1198,7 @@ img {
 
 .ownModal {
   opacity: 0;
-  visibility: visible;
+  visibility: hidden;
   position: fixed;
   left: 0;
   top: 0;

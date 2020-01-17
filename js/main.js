@@ -257,6 +257,8 @@ $(document).ready(function () {
     },
   });
 
+  //Активная ссылка
+  
   // Вкладки с картами
   $(".branches__tabs-map .tab").click(function() {
     $(".branches__tabs-map .tab").removeClass("active").eq($(this).index()).addClass("active");

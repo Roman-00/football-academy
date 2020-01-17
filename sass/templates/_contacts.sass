@@ -1,0 +1,41 @@
+.header
+  &__contacts
+    padding: 15px 0px 15px 0px
+    background: url('../img/header-bg.jpg') no-repeat center
+    background-size: cover
+.contacts
+  &__header
+    &-menu
+      margin-bottom: 0px
+  &__nav
+    padding: 23px 0px
+    background: $spaces
+    &-list
+      display: flex
+      padding-left: 0px
+    &-item
+      list-style: none
+      margin-right: 30px
+  &__item
+    &-arrow
+      position: relative
+      &::before
+        content: '>'
+        position: absolute
+        margin-top: -6px
+        margin-left: 3.6rem
+        color: $dark 
+        font-size: 22px
+        font-weight: 900
+    &-link
+      color: $ddark
+      font-family: 'Roboto Light', sans-serif
+      font-size: 13px
+      font-weight: 300
+      text-decoration: underline
+.tabs
+  &-contacts
+    margin-right: 0px
+.current a
+  color: $blue
+  text-decoration: none

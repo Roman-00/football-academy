@@ -9,7 +9,15 @@
     align-items: center
     padding-bottom: 39px
   &__menu
+    position: relative
     margin-bottom: 67px
+    &::after
+      content: ''
+      position: absolute
+      margin-top: 6.7rem
+      width: 100%
+      height: 1px
+      background: $lite
   &__made
     &-by
       display: flex

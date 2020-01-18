@@ -71,11 +71,109 @@
             <h2 class="contacts__title">Контакты</h2>
           </div>
           <!-- /.contacts__text-title -->
+          <div class="contacts-tabs">
+            <div class="contacts__tabs">
+                <span class="contacts__tab contacts__tab-one">QSI</span>
+                <span class="contacts__tab contacts__tab-two">Дворец «Жастар»</span>
+                <span class="contacts__tab contacts__tab-three">Тарлан АРЕНА</span>
+                <span class="contacts__tab contacts__tab-four">Ташенова 16А</span>
+            </div>
+            <div class="contacts__info">
+              <div class="contacts__adress">
+                <img src="img/contacts/map-icon.png" alt="Отметка" class="contacts__adress-images">
+                <span class="contacts__adress-text">
+                  606020, Россия, Нижегородская обл., г. Дзержинск,
+                  ул. Либкнехта, д. 41, копр.2
+                </span> 
+                <!-- /.contacts__adress-text -->
+              </div>
+              <!-- /.contacts__adress -->
+              <div class="contacts__requisites">
+                <div class="contacts__requisites-phone">
+                  <a href="tel:78312808447" class="requisites__phone-link"><img src="img/contacts/phone-icon.png" alt="Телефон" class="requisites__images"></a>
+                  <span class="requisites__phone-text">
+                    <a href="tel:78312808447" class="requisites__phone-link">
+                      +7 831 280-84-47 
+                    </a>
+                  </span> 
+                  <!-- /.requisites__phone-text -->
+                </div>
+                <!-- /.contacts__requisites-phone -->
+                <div class="contacts__requisites-email">
+                  <a href="mailto:info@melsytech.com" class="requisites__email-link">
+                    <img src="img/contacts/email-icon.png" alt="E-mail" class="requisites__email-images">
+                  </a>
+                  <span class="requisites__email-text">
+                    <a href="mailto:info@melsytech.com" class="requisites__email-link">
+                      info@melsytech.com
+                    </a> 
+                    <!-- /.requisites__email-link -->
+                  </span> 
+                  <!-- /.requisites__email-text -->
+                </div>
+                <!-- /.contacts__requisites-email -->
+              </div>
+              <!-- /.contacts__requisites -->
+            </div>
+            <!-- /.contacts__info -->
+            <div class="tab_content contacts-tab contacts-tab__content">
+                <div class="contacts-tab__item">
+                  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A804e9842e81be7d7cae8fe1bea1e8663e62d4eea16f76eee5d407e9c81fb6629&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+                </div>
+                <div class="contacts-tab__item">
+                  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A38014c39d234a806eafc07481668f628cd540dcae4eb849efbc9c37925d11e69&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+                </div>
+                <div class="contacts-tab__item">
+                  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad24ad5d72b6ad069d987120e407e1fca2145d17f225c6b6eb52396e938d48635&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+                </div>
+                <div class="contacts-tab__item">
+                  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aef9e6eacc1030dde44dad5122efa3df836014eb1cc96e9dc288ee62f413e08b2&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+                </div>
+            </div>
+          </div>
         </div>
         <!-- /.contacts__text -->
       </div>
     </section>
     <!-- /#contacts.contacts -->
+    <section class="questions" id="questions">
+      <div class="container">
+        <div class="questions__text">
+          <h2 class="questions__text-title">
+            Остались вопросы?
+          </h2>
+          <!-- /.questions__text-title -->
+        </div>
+        <!-- /.questions__text -->
+        <form action="send.php" class="form questions__form">
+          <div class="questions__input-group">
+            <div class="questions__input-left">
+
+              <input type="text" name="userName" class="input form__input questions__input questions__input-aside questions__input-one" id="questions-user-name" placeholder="Имя...">
+
+              <input type="tel" name="userPhone" class="input form__input questions__input questions__input-aside questions__input-two" id="questions-user-phone" placeholder="Номер телефона...">
+
+              <input type="email" name="userEmail" class="input form__input questions__input questions__input-three" id="questions-user-email" placeholder="E-mail...">
+            </div>
+            <!-- /.questions__input-left -->
+            <div class="questions__input-right">
+              <input type="text" name="userMessage" class="input form__input questions__input questions__input-size questions__input-four" id="questions-user-message" placeholder="Сообщение...">
+            </div>
+            <!-- /.questions__input-right -->
+          </div>
+          <!-- /.questions__input-group -->
+          <div class="questions__button-group">
+            <button class="button button-primary">
+              Записаться на тренировку
+            </button> 
+            <!-- /.button button-primary -->
+          </div>
+          <!-- /.questions__button-group -->
+        </form>
+        <!-- /.form questions__form -->
+      </div>
+    </section>
+    <!-- /#questions.questions -->
   </main>
 
   <footer class="footer" id="footer">

@@ -257,7 +257,12 @@ $(document).ready(function () {
     },
   });
 
-  //Активная ссылка
+  //Вкладки с картами в Контактах
+  $(".contacts-tabs .contacts__tab").click(function() {
+	  $(".contacts-tabs .contacts__tab").removeClass("contacts-active").eq($(this).index()).addClass("contacts-active");
+	  $(".contacts-tab__item").hide().eq($(this).index()).fadeIn()
+  }).eq(0).addClass("contacts-active");
+  $(".contacts-tab__item").not(":first").hide();
   
   // Вкладки с картами
   $(".branches__tabs-map .tab").click(function() {

@@ -397,6 +397,9 @@ body {
   font-family: 'Roboto Regular', sans-serif;
   font-size: 1rem; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
 img {
   max-width: 100%; }
 
@@ -1298,12 +1301,144 @@ img {
   font-weight: 300;
   text-decoration: underline; }
 
+.contacts-tab {
+  background: url("../img/branches/branches-bg.png") no-repeat center; }
+  .contacts-tab__item {
+    max-width: 1080px;
+    margin: auto; }
+
+.contacts__tabs {
+  display: flex;
+  justify-content: space-between; }
+
+.contacts__tab {
+  display: block;
+  font-family: 'Roboto Bold', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #3f3f3f;
+  border: 1px solid #33b7d2;
+  cursor: pointer; }
+  .contacts__tab-one {
+    padding: 35px 116px; }
+  .contacts__tab-two {
+    padding: 35px 46px; }
+  .contacts__tab-three {
+    padding: 35px 64px; }
+  .contacts__tab-four {
+    padding: 35px 64px; }
+
+.contacts__adress {
+  display: flex;
+  align-items: center; }
+  .contacts__adress::after {
+    content: '';
+    width: 1px;
+    height: 136px;
+    margin-left: 75px;
+    background: #33b7d2; }
+  .contacts__adress-text {
+    max-width: 460px;
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #3b3b3b; }
+
+.contacts__info {
+  display: flex;
+  align-items: center;
+  margin-top: 93px;
+  margin-bottom: 75px; }
+
+.contacts__requisites {
+  margin-left: 42px; }
+  .contacts__requisites-phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px; }
+  .contacts__requisites-email {
+    display: flex;
+    align-items: center; }
+
+.requisites__phone-text {
+  margin-left: 17px;
+  font-family: 'Roboto Bold',sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 22px; }
+
+.requisites__phone-link {
+  text-decoration: none;
+  color: #3b3b3b; }
+
+.requisites__email-text {
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 17px; }
+
+.requisites__email-link {
+  color: #33b7d2; }
+
 .tabs-contacts {
   margin-right: 0px; }
 
 .current a {
   color: #33b7d2;
   text-decoration: none; }
+
+.contacts-active {
+  border: 1px solid transparent;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.17);
+  background: #ffd801; }
+
+.questions {
+  margin-top: 38px;
+  padding-bottom: 50px;
+  background: #f5f9fa; }
+  .questions__text-title {
+    margin: 0;
+    padding-top: 48px;
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #3f3f3f; }
+    .questions__text-title::after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 286px;
+      margin-top: 11px;
+      margin-bottom: 25px;
+      background: #33b7d2; }
+  .questions__input {
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 24px;
+    border-radius: 0px;
+    color: #606060;
+    opacity: 0.6;
+    border: 1px solid #ededed; }
+    .questions__input-one {
+      padding: 21px 263px 21px 22px; }
+    .questions__input-two {
+      padding: 21px 190px 21px 22px; }
+    .questions__input-three {
+      padding: 21px 251px 21px 22px; }
+    .questions__input-four {
+      padding: 21px 528px 169px 22px; }
+    .questions__input-size {
+      margin-left: 25px; }
+    .questions__input-group {
+      display: flex;
+      margin-bottom: 15px; }
+    .questions__input-left {
+      display: flex;
+      flex-direction: column; }
+    .questions__input-aside {
+      margin-bottom: 6px; }
 
 @media screen and (max-width: 1270px) {
   html {

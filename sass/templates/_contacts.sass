@@ -1,8 +1,7 @@
 .header
   &__contacts
     padding: 15px 0px 15px 0px
-    background: url('../img/header-bg.jpg') no-repeat center
-    background-size: cover
+    background: url('../img/pages-header.png') no-repeat
 .contacts
   &__header
     &-menu
@@ -16,6 +15,19 @@
     &-item
       list-style: none
       margin-right: 30px
+  &__title
+    margin-top: 33px
+    font-family: 'Roboto Regular', sans-serif
+    font-size: 30px
+    font-weight: 400
+    color: $secondary
+    &::after
+      content: ''
+      display: block
+      width: 100%
+      height: 1px 
+      margin: 23px 0px 25px 0px
+      background: $blue
   &__item
     &-arrow
       position: relative

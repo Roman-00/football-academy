@@ -67,7 +67,10 @@
     <section class="contacts" id="contacts">
       <div class="container">
         <div class="contacts__text">
-
+          <div class="contacts__text-title">
+            <h2 class="contacts__title">Контакты</h2>
+          </div>
+          <!-- /.contacts__text-title -->
         </div>
         <!-- /.contacts__text -->
       </div>
@@ -130,6 +133,47 @@
     </div>
   </footer>
   <!-- /#footer.footer -->
+
+  <div class="modal">
+    <div class="modal__dialog">
+      <button class="modal__close">
+
+      </button> 
+      <!-- /.modal__close -->
+      <h3 class="modal__title">
+        Обратный звонок 
+      </h3>
+      <form action="send.php" method="POST" class="form modal__form">
+        <div class="input-group modal__input-group modal__input-aside">
+          <input type="text" name="userName" class="input modal__input" id="modal-user-name" placeholder="Ваше имя">
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <div class="input-group modal__input-group modal__input-top">
+          <input type="tel" name="userPhone" class="input modal__input" id="modal-user-phone" placeholder="Ваш номер телефона">
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <button type="submit" class="button button-primary modal__button">
+          Перезвоните мне
+        </button> 
+        <!-- /.button button-primary modal__button -->
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal --> 
+
+  <div id="ownModal" class="ownModal">
+    <div class="ownModal__dialoge">
+      <span class="ownModal__text">
+        Форма отправленна, мы свяжимся с вами через 10 минут
+      </span> 
+      <!-- /.ownModal__text -->
+      <button class="button  ownModal__close">Ок</button>
+    </div>
+    <!-- /.ownModal__dialoge -->
+  </div>
+  <!-- /#ownModal.ownModal -->
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>

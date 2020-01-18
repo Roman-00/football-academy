@@ -29,6 +29,11 @@
       margin: 23px 0px 25px 0px
       background: $blue
   &__item
+    &-active
+      font-family: 'Roboto Medium', sans-serif
+      font-weight: 500
+      color: $blue
+      text-decoration: none
     &-arrow
       position: relative
       &::before
@@ -52,6 +57,7 @@
       margin: auto
   &__tabs
     display: flex
+    flex-wrap: wrap
     justify-content: space-between
   &__tab
     display: block

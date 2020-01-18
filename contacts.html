@@ -56,7 +56,7 @@
           </li>
           <!-- /.contacts__nav-item -->
           <li class="contacts__nav-item">
-            <a href="contacts.html" class="contacts__item-link">Контакты</a>
+            <a href="contacts.html" class="contacts__item-active">Контакты</a>
           </li>
           <!-- /.contacts__nav-item -->
         </ul>
@@ -163,8 +163,9 @@
           </div>
           <!-- /.questions__input-group -->
           <div class="questions__button-group">
-            <button class="button button-primary">
-              Записаться на тренировку
+            <div class="g-recaptcha" data-sitekey="6LflhtAUAAAAADu_yPvVa1D7rZsgEU9yhBdGKgEe"></div>
+            <button class="button button-primary questions__btn">
+              Отправить!
             </button> 
             <!-- /.button button-primary -->
           </div>
@@ -274,6 +275,7 @@
   <!-- /#ownModal.ownModal -->
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="https://www.youtube.com/iframe_api"></script>

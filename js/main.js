@@ -257,6 +257,68 @@ $(document).ready(function () {
     },
   });
 
+  // Валидация формы на Страницк Контакты секция
+  $('.questions__form').validate({
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        maxlength: 15,
+        minlength: 2
+      },
+      userPhone: "required",
+      userEmail: "required",
+      userMessage: "required",
+      // правило обьект
+    },// сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не должно быть короче 2 символов",
+        maxlength: "Имя не должно превышать 15 символов"
+      },
+      userPhone: "Телефон обязателен",
+      userEmail: "E-mail обязателен",
+      userMessage: "Введите сообщения",
+    },
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+  
+       error.insertAfter($(element));
+    },
+    errorElement: "p",
+    errorClass: "invalid",
+
+    // Jquery Ajax form
+    submitHandler: function(form) {
+     $.ajax({
+       type: "POST",
+       url: "send.php",
+       data: $(form).serialize(),
+       success: function (response) {
+        let ownModal = document.getElementById('ownModal');
+        ownModal.classList.add('active');
+        const RemoveOwnModal = () => {
+         ownModal.classList.remove('active')
+        };
+        setTimeout(RemoveOwnModal, 3000); 
+         $(form)[0].reset();
+         modal.removeClass('modal--visible');
+       },
+       error: function (response) {
+         console.error('Ошибка запроса! ' + response);
+       }
+     });
+    },
+  });
+
+  //recapcha
+  var onloadCallback = function() {
+    alert("grecaptcha is ready!");
+  };
+
   //Вкладки с картами в Контактах
   $(".contacts-tabs .contacts__tab").click(function() {
 	  $(".contacts-tabs .contacts__tab").removeClass("contacts-active").eq($(this).index()).addClass("contacts-active");

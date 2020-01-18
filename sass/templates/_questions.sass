@@ -19,6 +19,17 @@
         margin-top: 11px
         margin-bottom: 25px
         background: $blue
+  &__btn
+    padding: 21px 45px
+    font-family: 'Roboto Medium', sans-serif
+    font-size: 15px
+    font-weight: 500
+    color: $dark
+  &__button
+    &-group
+      display: flex
+      align-items: center
+      justify-content: flex-end
   &__form
   &__input
     font-family: 'Roboto Light', sans-serif
@@ -43,7 +54,12 @@
       display: flex
       margin-bottom: 15px
     &-left
+      position: relative
       display: flex
       flex-direction: column
     &-aside
       margin-bottom: 6px
+.g-recaptcha
+  margin-right: 21px
+p.invalid
+  color: $tomato

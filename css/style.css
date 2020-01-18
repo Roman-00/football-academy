@@ -1283,6 +1283,12 @@ img {
     margin: 23px 0px 25px 0px;
     background: #33b7d2; }
 
+.contacts__item-active {
+  font-family: 'Roboto Medium', sans-serif;
+  font-weight: 500;
+  color: #33b7d2;
+  text-decoration: none; }
+
 .contacts__item-arrow {
   position: relative; }
   .contacts__item-arrow::before {
@@ -1309,6 +1315,7 @@ img {
 
 .contacts__tabs {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between; }
 
 .contacts__tab {
@@ -1412,6 +1419,16 @@ img {
       margin-top: 11px;
       margin-bottom: 25px;
       background: #33b7d2; }
+  .questions__btn {
+    padding: 21px 45px;
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #2b2b2b; }
+  .questions__button-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
   .questions__input {
     font-family: 'Roboto Light', sans-serif;
     font-size: 13px;
@@ -1435,10 +1452,17 @@ img {
       display: flex;
       margin-bottom: 15px; }
     .questions__input-left {
+      position: relative;
       display: flex;
       flex-direction: column; }
     .questions__input-aside {
       margin-bottom: 6px; }
+
+.g-recaptcha {
+  margin-right: 21px; }
+
+p.invalid {
+  color: #e90000; }
 
 @media screen and (max-width: 1270px) {
   html {
@@ -1450,7 +1474,9 @@ img {
   .contacts {
     font-size: 16px; }
   .training-title__text {
-    margin-right: 30px; } }
+    margin-right: 30px; }
+  .questions__input-four {
+    padding: 21px 428px 169px 22px; } }
 
 @media screen and (max-width: 1190px) {
   .header__select {
@@ -1517,7 +1543,24 @@ img {
     height: 0;
     border-style: solid;
     border-width: 41px 0 41px 15px;
-    border-color: transparent transparent transparent #ffd901; } }
+    border-color: transparent transparent transparent #ffd901; }
+  .contacts__tab {
+    margin-bottom: 20px; }
+  .questions__text-title {
+    text-align: center; }
+    .questions__text-title::after {
+      margin: 11px auto;
+      margin-bottom: 11px; }
+  .questions__button-group {
+    justify-content: center; }
+  .questions__input-left {
+    margin-right: 20px;
+    margin-bottom: 6px; }
+  .questions__input-group {
+    flex-wrap: wrap;
+    justify-content: center; }
+  .questions__input-size {
+    margin-left: 0px; } }
 
 @media screen and (max-width: 992px) {
   .header__title {
@@ -1564,7 +1607,23 @@ img {
     height: 0;
     border-style: solid;
     border-width: 41px 0 41px 15px;
-    border-color: transparent transparent transparent #ffd901; } }
+    border-color: transparent transparent transparent #ffd901; }
+  .contacts__tabs {
+    justify-content: space-around; }
+  .contacts__info {
+    flex-wrap: wrap; }
+  .contacts__requisites {
+    margin-left: 0px; }
+  .contacts__adress {
+    margin-bottom: 20px; }
+    .contacts__adress::after {
+      display: none; }
+    .contacts__adress-text {
+      font-size: 16px; }
+  .requisites__phone-text {
+    font-size: 18px; }
+  .requisites__email-text {
+    font-size: 16px; } }
 
 @media screen and (max-width: 760px) {
   .header__title {
@@ -1586,7 +1645,11 @@ img {
     width: 400px;
     min-height: 100px;
     margin-right: 0;
-    margin: auto; } }
+    margin: auto; }
+  .contacts__tabs {
+    justify-content: space-around; }
+  .questions__input-four {
+    padding: 21px 328px 129px 22px; } }
 
 @media screen and (max-width: 570px) {
   .header__title {
@@ -1634,7 +1697,40 @@ img {
     margin-right: 0;
     margin: auto; }
   .active::after {
-    display: none; } }
+    display: none; }
+  .contacts-tab__item {
+    height: 300px; }
+  .contacts__adress-text {
+    font-size: 14px; }
+  .questions {
+    margin-top: 138px; }
+    .questions__text-title {
+      text-align: center;
+      font-size: 24px; }
+      .questions__text-title::after {
+        width: 226px;
+        margin: auto;
+        margin-top: 11px;
+        margin-bottom: 17px; }
+  .questions__button-group {
+    flex-wrap: wrap; }
+  .questions__input {
+    display: block; }
+    .questions__input-left {
+      max-width: 90%;
+      margin-right: 0px; }
+    .questions__input-right {
+      max-width: 90%; }
+    .questions__input-one {
+      padding: 21px 100px 21px 22px; }
+    .questions__input-two {
+      padding: 21px 50px 21px 22px; }
+    .questions__input-three {
+      padding: 21px 60px 21px 22px; }
+    .questions__input-four {
+      padding: 21px 100px 100px 22px; }
+  .g-recaptcha {
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 375px) {
   .header__input {

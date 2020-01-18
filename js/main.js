@@ -87,9 +87,9 @@ $(document).ready(function () {
        data: $(form).serialize(),
        success: function (response) {
         let ownModal = document.getElementById('ownModal');
-        ownModal.classList.add('active');
+        ownModal.classList.add('active-own');
         const RemoveOwnModal = () => {
-         ownModal.classList.remove('active')
+         ownModal.classList.remove('active-own')
         };
         setTimeout(RemoveOwnModal, 3000); 
          $(form)[0].reset();
@@ -137,9 +137,9 @@ $(document).ready(function () {
        data: $(form).serialize(),
        success: function (response) {
         let ownModal = document.getElementById('ownModal');
-        ownModal.classList.add('active');
+        ownModal.classList.add('active-own');
         const RemoveOwnModal = () => {
-         ownModal.classList.remove('active')
+         ownModal.classList.remove('active-own')
         };
         setTimeout(RemoveOwnModal, 3000); 
          $(form)[0].reset();
@@ -187,9 +187,9 @@ $(document).ready(function () {
        data: $(form).serialize(),
        success: function (response) {
         let ownModal = document.getElementById('ownModal');
-        ownModal.classList.add('active');
+        ownModal.classList.add('active-own');
         const RemoveOwnModal = () => {
-         ownModal.classList.remove('active')
+         ownModal.classList.remove('active-own')
         };
         setTimeout(RemoveOwnModal, 3000); 
          $(form)[0].reset();
@@ -299,9 +299,9 @@ $(document).ready(function () {
        data: $(form).serialize(),
        success: function (response) {
         let ownModal = document.getElementById('ownModal');
-        ownModal.classList.add('active');
+        ownModal.classList.add('active-own');
         const RemoveOwnModal = () => {
-         ownModal.classList.remove('active')
+         ownModal.classList.remove('active-own')
         };
         setTimeout(RemoveOwnModal, 3000); 
          $(form)[0].reset();

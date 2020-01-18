@@ -1509,6 +1509,7 @@ p.invalid {
     line-height: 26px; }
   .news-kairat__news-images {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between; }
   .news-kairat__news-bold {
     font-weight: 700; }
@@ -1525,7 +1526,11 @@ p.invalid {
   .training-title__text {
     margin-right: 30px; }
   .questions__input-four {
-    padding: 21px 428px 169px 22px; } }
+    padding: 21px 428px 169px 22px; }
+  .news-kairat-images__bottom {
+    margin-bottom: 10px; }
+  .news-kairat__news-images {
+    justify-content: center; } }
 
 @media screen and (max-width: 1190px) {
   .header__select {

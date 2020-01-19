@@ -89,43 +89,47 @@ $(document).ready(function () {
 
     // Jquery Ajax form
     submitHandler: function(form) {
-     $.ajax({
-       type: "POST",
-       url: "send.php",
-       data: $(form).serialize(),
-       success: function (response) {
-        let ownModal = document.getElementById('ownModal');
-        ownModal.classList.add('active-own');
-        const RemoveOwnModal = () => {
-         ownModal.classList.remove('active-own')
-        };
-        setTimeout(RemoveOwnModal, 3000); 
-         $(form)[0].reset();
-         modal.removeClass('modal--visible');
-       },
-       error: function (response) {
-         console.error('Ошибка запроса! ' + response);
-         ym('65026879', 'reachGoal', 'button'); return true;
-       }
-     });
-    },
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+         let ownModal = document.getElementById('ownModal');
+         ownModal.classList.add('active-own');
+         const RemoveOwnModal = () => {
+          ownModal.classList.remove('active-own')
+         };
+         setTimeout(RemoveOwnModal, 3000); 
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+        },
+        error: function (response) {
+          console.error('Ошибка запроса! ' + response);
+          ym('65026879', 'reachGoal', 'button'); return true;
+        }
+      });
+     },
   });
 
-  //Валидация Формы Beginer
+  //Валидация Формы Header
   $('.modal-beginer__form').validate({
     rules: {
       // строчное правило
       userName: {
         required: true,
+        maxlength: 15,
+        minlength: 2
       },
       userPhone: "required",
       // правило обьект
     },// сообщения
     messages: {
       userName: {
-        required: "Заполните поле",
+        required: "Имя обязательно",
+        minlength: "Имя не должно быть короче 2 символов",
+        maxlength: "Имя не должно превышать 15 символов"
       },
-      userPhone: "Неверный номер",
+      userPhone: "Номер Обязательно",
     },
     errorPlacement: function (error, element) {
       if (element.attr("type") == "checkbox") {
@@ -189,26 +193,26 @@ $(document).ready(function () {
 
     // Jquery Ajax form
     submitHandler: function(form) {
-     $.ajax({
-       type: "POST",
-       url: "send.php",
-       data: $(form).serialize(),
-       success: function (response) {
-        let ownModal = document.getElementById('ownModal');
-        ownModal.classList.add('active-own');
-        const RemoveOwnModal = () => {
-         ownModal.classList.remove('active-own')
-        };
-        setTimeout(RemoveOwnModal, 3000); 
-         $(form)[0].reset();
-         modal.removeClass('modal--visible');
-       },
-       error: function (response) {
-         console.error('Ошибка запроса! ' + response);
-         ym('65026879', 'reachGoal', 'button'); return true;
-       }
-     });
-    },
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+         let ownModal = document.getElementById('ownModal');
+         ownModal.classList.add('active-own');
+         const RemoveOwnModal = () => {
+          ownModal.classList.remove('active-own')
+         };
+         setTimeout(RemoveOwnModal, 3000); 
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+        },
+        error: function (response) {
+          console.error('Ошибка запроса! ' + response);
+          ym('65026879', 'reachGoal', 'button'); return true;
+        }
+      });
+     },
   });
 
   //Валидация Формы Header

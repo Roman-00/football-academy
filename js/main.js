@@ -10,7 +10,15 @@ $(document).ready(function () {
     modal.toggleClass('modal--visible');
   });
 
-//Вторая модалка
+  $('.list').click(function(){
+    $('.column-one').toggleClass('column-list');
+  });
+
+  $('.grid').click(function() {
+    $('.column-one').toggleClass('column-list');
+  });
+
+  //Вторая модалка
   var modalBeginer = $('.modal-beginer'),
       modalBtn = $('[data-toggle=modal-beginer]'),
       closeBtn = $('.modal-beginer__close');

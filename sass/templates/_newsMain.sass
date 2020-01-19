@@ -23,11 +23,13 @@
       color: $secondary
   &-card
     display: flex
+    flex-wrap: wrap
     align-items: center
     margin-bottom: 32px
     &__bottom
       margin-bottom: 0px
     &__text
+      width: 100%
       max-width: 265px
       margin-left: 29px
   &__card
@@ -47,13 +49,59 @@
       font-size: 14px
       font-weight: 300
       text-align: justify
+      line-height: 20px
     &-link
       color: $blue
       text-decoration: none
       &:hover
         text-decoration: underline
         color: $blue
-#column1
-  display: flex
-  flex-wrap: wrap
-  justify-content: space-between
+.column
+  &-one
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+.column
+  &-list
+    display: block
+.news-pagination
+  &__next, &__prev
+    max-width: 13px
+    height: 13px
+    opacity: 0.4
+  &__wrap
+    display: flex
+    justify-content: center
+    margin-top: 46px
+    &-list
+      position: relative
+      display: flex
+      align-items: center
+      padding: 10px 20px
+      list-style: none
+  &__list
+    &-item
+      width: 35px
+      height: 35px
+      line-height: 35px
+      border: 1px solid $sspaces
+      border-radius: 50%
+      text-align: center
+      cursor: pointer
+  &__number
+    width: 35px
+    height: 35px
+    text-align: center
+    line-height: 35px
+    margin: 0px 5px
+    &-active
+      background: $yello
+      color: $dark
+    &-link
+      display: block
+      text-decoration: none
+      border: 1px solid $sspaces
+      border-radius: 50%
+      color: $sspaces
+      &:hover
+        background: $yello

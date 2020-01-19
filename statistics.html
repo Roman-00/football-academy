@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Football Academy</title>
+  <!-- Подключаем стили css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header__contacts" id="header">
+    <div class="container">
+      <div class="menu header__menu contacts__header-menu">
+        <div class="logo header__logo">
+          <img src="img/logo.png" alt="Logo">
+          <div class="select header__select">
+            <select name="city" id="select">
+              <option value="Астана" class="select__option">Астана</option>
+              <option value="Алматы" class="select__option">Алматы</option>
+              <option value="Шымкент" class="select__option">Шымкент</option>
+            </select>
+          </div>
+        </div>
+        <!-- /.logo header__logo -->
+        <!-- /.select header__select -->
+        <nav class="nav menu__nav">
+          <a href="index.html" class="nav__item nav__item-border">О нас</a>
+          <!-- /.nav__item -->
+          <a href="statistics.html" class="nav__item nav__item-border">Статистика</a>
+          <!-- /.nav__item -->
+          <a href="newsMain.html" class="nav__item nav__item-border">Новости</a>
+          <!-- /.nav__item -->
+          <a href="contacts.html" class="nav__item">Контакты</a>
+          <!-- /.nav__item -->
+        </nav>
+        <div class="contacts menu__contacts">
+          <a href="tel:+79997683299" class="phone contacts__phone">
+            <span class="contacts__phone-color">+7 702</span> 440-70-07
+          </a>
+          <button class="button contacts__button button-primary" data-toggle="modal">
+            Перезвоните мне
+          </button>
+        </div>
+      </div>
+      <!-- /.menu .header__menu -->
+    </div>
+  </header>
+  <!-- /#header.header -->
+  <main>
+    <nav class="contacts__nav">
+      <div class="container">
+        <ul class="contacts__nav-list">
+          <li class="contacts__nav-item">
+            <a href="index.html" class="contacts__item-link contacts__item-arrow">Главня</a>
+          </li>
+          <!-- /.contacts__nav-item -->
+          <li class="contacts__nav-item">
+            <a href="statistics.html" class="contacts__item-active">Статистика</a>
+          </li>
+          <!-- /.contacts__nav-item -->
+        </ul>
+        <!-- /.contacts__nav-list -->
+      </div>
+    </nav>
+    <!-- /.contacts__nav -->
+    <section class="statistics" id="statistics">
+      <div class="container">
+        <div class="section-title statistics__section-title">
+          <h2 class="statistics-title__heading">Введите имя и фамилию Вашего ребенка</h2>
+          <!-- /.section-title__heading -->
+          <div class="section-title__image statistics-title__image">
+            <img src="img/soccerball.png" alt="Football">
+          </div>
+          <!-- /.section-title__img -->
+          <span class="statistics-title__description">
+            Чтобы посмотреть его данные по результатам тренировок и сдачи нормативов
+          </span> 
+          <!-- /.statistics-title__description -->
+        </div>
+        <!-- /.section-title -->
+        <div class="statistics__wrap-search">
+          <form action="#" class="form statistics__form">
+            <div class="statistics__input-group">
+              <input type="text" name="userSearch" class="input form__input statistics__input" id="search" placeholder="Имя и Фамилия">
+              <button class="button button-primary statistics__button">
+                Найти статистику
+              </button> 
+              <!-- /.button from__button -->
+            </div>
+            <!-- /.control__input-group -->
+          </form>
+          <!-- /.form header__form -->
+        </div>
+        <!-- /.statistics__wrap-search -->
+      </div>
+    </section>
+    <!-- /#statistics.statistics -->
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="menu header__menu footer__menu">
+        <div class="logo header__logo">
+          <img src="img/logo.png" alt="Logo">
+          <div class="select header__select">
+            <select name="select" id="select">
+              <option value="Астана" class="select__option">Астана</option>
+              <option value="Алматы" class="select__option">Алматы</option>
+              <option value="Шымкент" class="select__option">Шымкент</option>
+            </select>
+          </div>
+        </div>
+        <!-- /.logo header__logo -->
+        <!-- /.select header__select -->
+        <nav class="nav menu__nav">
+          <a href="index.html" class="nav__item nav__item-border">О нас</a>
+          <!-- /.nav__item -->
+          <a href="statistics.html" class="nav__item nav__item-border">Статистика</a>
+          <!-- /.nav__item -->
+          <a href="newsMain.html" class="nav__item nav__item-border">Новости</a>
+          <!-- /.nav__item -->
+          <a href="contacts.html" class="nav__item">Контакты</a>
+          <!-- /.nav__item -->
+        </nav>
+        <div class="contacts menu__contacts">
+          <a href="tel:+79997683299" class="phone contacts__phone">
+            <span class="contacts__phone-color">+7 702</span> 440-70-07
+          </a>
+          <button class="button contacts__button button-primary" data-toggle="modal">
+            Перезвоните мне
+          </button>
+        </div>
+      </div>
+      <!-- /.menu .header__menu -->
+      <div class="footer__text">
+        <div class="footer__rights-reserved">
+          <p class="rights__reserver-text">
+            © www.pro-football.kz 2008-2015. Все права защищены.
+          </p>
+          <!-- /.rights__reserver-text -->
+        </div>
+        <!-- /.footer__rights-reserved -->
+        <div class="footer__made-by">
+          <span class="made__by-text">
+            Сделано в:
+          </span>
+          <img src="img/loro-web__team.jpg" alt="Web team">
+        </div>
+        <!-- /.footer__made-by -->
+      </div>
+      <!-- /.footer__text -->
+    </div>
+  </footer>
+  <!-- /#footer.footer -->
+
+  <div class="modal">
+    <div class="modal__dialog">
+      <button class="modal__close">
+
+      </button> 
+      <!-- /.modal__close -->
+      <h3 class="modal__title">
+        Обратный звонок 
+      </h3>
+      <form action="send.php" method="POST" class="form modal__form">
+        <div class="input-group modal__input-group modal__input-aside">
+          <input type="text" name="userName" class="input modal__input" id="modal-user-name" placeholder="Ваше имя">
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <div class="input-group modal__input-group modal__input-top">
+          <input type="tel" name="userPhone" class="input modal__input" id="modal-user-phone" placeholder="Ваш номер телефона">
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <button type="submit" class="button button-primary modal__button">
+          Перезвоните мне
+        </button> 
+        <!-- /.button button-primary modal__button -->
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal --> 
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

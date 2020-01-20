@@ -338,7 +338,7 @@ $(document).ready(function () {
   var onloadCallback = function() {
     alert("grecaptcha is ready!");
   };
-
+  
   //Вкладки с картами в Контактах
   $(".contacts-tabs .contacts__tab").click(function() {
 	  $(".contacts-tabs .contacts__tab").removeClass("contacts-active").eq($(this).index()).addClass("contacts-active");

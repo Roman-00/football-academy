@@ -14,8 +14,16 @@ $(document).ready(function () {
     $('.column-one').toggleClass('column-list');
   });
 
+  $('.list').click(function(){
+    $('.news-card__text').toggleClass('column-width');
+  });
+
   $('.grid').click(function() {
     $('.column-one').toggleClass('column-list');
+  });
+
+  $('.grid').click(function() {
+    $('.news-card__text').toggleClass('column-width');
   });
 
   //Вторая модалка
@@ -41,7 +49,7 @@ $(document).ready(function () {
   });
 
   //Маска для телефона
-  $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "Ваш номер телефона"});
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "Ваш номер телефона"});
 
   //Youtube API
   $('.video__play').on('click', function onYouTubeIframeAPIReady() {
@@ -111,7 +119,7 @@ $(document).ready(function () {
      },
   });
 
-  //Валидация Формы Header
+  //Валидация Формы Beginer
   $('.modal-beginer__form').validate({
     rules: {
       // строчное правило
@@ -155,7 +163,7 @@ $(document).ready(function () {
         };
         setTimeout(RemoveOwnModal, 3000); 
          $(form)[0].reset();
-         modal.removeClass('modal--visible');
+         modalBeginer.removeClass('modal-beginer--visible');
        },
        error: function (response) {
          console.error('Ошибка запроса! ' + response);
@@ -205,7 +213,7 @@ $(document).ready(function () {
          };
          setTimeout(RemoveOwnModal, 3000); 
           $(form)[0].reset();
-          modal.removeClass('modal--visible');
+          modalIntensive.removeClass('modal-intensive--visible');
         },
         error: function (response) {
           console.error('Ошибка запроса! ' + response);

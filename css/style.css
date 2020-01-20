@@ -869,6 +869,8 @@ img {
   max-width: 360px;
   box-shadow: 0 0 9px rgba(0, 0, 0, 0.17);
   border: 1.5px solid #67b0bf; }
+  .card__ticket:hover {
+    border: 1.5px solid #33b7d2; }
   .card__ticket-one {
     border: 1.5px solid #67b0bf; }
   .card__ticket-two {
@@ -910,6 +912,9 @@ img {
 
 .card__title-transform {
   text-transform: uppercase; }
+
+.card__ticket > .card__title-light:hover {
+  background: #33b7d2; }
 
 .branches {
   padding: 48px 0px 67px 0px; }
@@ -1015,6 +1020,12 @@ img {
   font-weight: 300;
   color: #ffffff;
   opacity: 0.5; }
+
+.text__made {
+  text-align: center;
+  background: #ffd801;
+  padding: 5px 5px;
+  border-radius: 5px; }
 
 .modal {
   opacity: 0;
@@ -1541,7 +1552,6 @@ p.invalid {
   .news-card {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     margin-bottom: 32px; }
     .news-card__bottom {
       margin-bottom: 0px; }
@@ -1579,6 +1589,10 @@ p.invalid {
 
 .column-list {
   display: block; }
+
+.column-width {
+  max-width: 100%;
+  width: 73%; }
 
 .news-pagination__next, .news-pagination__prev {
   max-width: 13px;
@@ -2148,4 +2162,6 @@ p.invalid {
     padding: 18px 54px 18px 19px;
     margin-bottom: 12px; }
   .footer__text {
-    justify-content: center; } }
+    justify-content: center; }
+  .training-title__text {
+    margin-right: 0px; } }

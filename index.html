@@ -220,7 +220,7 @@
                 от 12 690 тенге
               </span> 
               <!-- /.card__groups-pricetag -->
-              <button class="button button-outline groups__button">
+              <button class="button button-outline groups__button" data-toggle="modal-baby">
                 Подробнее
               </button> 
               <!-- /.button button-outline -->
@@ -266,7 +266,7 @@
                 от 15 300 тенге
               </span> 
               <!-- /.card__groups-pricetag -->
-              <button class="button button-outline groups__button">
+              <button class="button button-outline groups__button" data-toggle="modal-juvenali">
                 Подробнее
               </button> 
               <!-- /.button button-outline -->
@@ -292,7 +292,7 @@
                 от 17 500 тенге
               </span> 
               <!-- /.card__groups-pricetag -->
-              <button class="button button-outline groups__button">
+              <button class="button button-outline groups__button" data-toggle="modal-juvenali-two">
                 Подробнее
               </button> 
               <!-- /.button button-outline -->
@@ -315,7 +315,8 @@
                 от 18 900 тенге
               </span> 
               <!-- /.card__groups-pricetag -->
-              <button class="button button-outline groups__button">
+              <button class="button button-outline groups__button"
+              data-toggle="modal-junior">
                 Подробнее
               </button> 
               <!-- /.button button-outline -->
@@ -426,7 +427,7 @@
     <section class="branches" id="branches">
       <div class="container">
         <div class="section-title branches__section-title">
-          <h2 class="branches-title__heading">Наши абонементы</h2>
+          <h2 class="branches-title__heading">Наши филиалы</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__image branches-title__image">
             <img src="img/soccerball.png" alt="Football">
@@ -588,6 +589,122 @@
     <!-- /.modal__dialog -->
   </div>
   <!-- /.modal-beginer --> 
+
+  <div class="modal-baby">
+    <div class="modal__dialog">
+      <button class="modal-baby__close">
+
+      </button> 
+      <!-- /.modal__close -->
+      <h3 class="modal-baby__title">
+        Информация о «BabyStart»
+      </h3>
+      <form action="send.php" method="POST" class="form modal-baby__form">
+        <div class="input-group modal__input-group modal__input-aside">
+          <input type="text" name="userName" class="input modal__input" id="modal-beginer-user-name" placeholder="Ваше имя">
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <div class="input-group modal__input-group modal__input-top">
+          <input type="tel" name="userPhone" class="input modal__input" id="modal-beginer-user-phone" placeholder="Ваш номер телефона">
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <button type="submit" class="button button-primary modal__button">
+          Отправить заявку
+        </button> 
+        <!-- /.button button-primary modal__button -->
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal-baby -->
+  
+  <div class="modal-juvenali">
+    <div class="modal__dialog">
+      <button class="modal-juvenali__close">
+
+      </button> 
+      <!-- /.modal__close -->
+      <h3 class="modal-juvenali__title">
+        Информация о «Ювеналы»
+      </h3>
+      <form action="send.php" method="POST" class="form modal-juvenali__form">
+        <div class="input-group modal__input-group modal__input-aside">
+          <input type="text" name="userName" class="input modal__input" id="modal-beginer-user-name" placeholder="Ваше имя">
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <div class="input-group modal__input-group modal__input-top">
+          <input type="tel" name="userPhone" class="input modal__input" id="modal-beginer-user-phone" placeholder="Ваш номер телефона">
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <button type="submit" class="button button-primary modal__button">
+          Отправить заявку
+        </button> 
+        <!-- /.button button-primary modal__button -->
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal-juvenali --> 
+
+  <div class="modal-juvenali-two">
+    <div class="modal__dialog">
+      <button class="modal-juvenali-two__close">
+
+      </button> 
+      <!-- /.modal__close -->
+      <h3 class="modal-juvenali-two__title">
+        Информация о «Ювеналы 2»
+      </h3>
+      <form action="send.php" method="POST" class="form modal-juvenali-two__form">
+        <div class="input-group modal__input-group modal__input-aside">
+          <input type="text" name="userName" class="input modal__input" id="modal-beginer-user-name" placeholder="Ваше имя">
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <div class="input-group modal__input-group modal__input-top">
+          <input type="tel" name="userPhone" class="input modal__input" id="modal-beginer-user-phone" placeholder="Ваш номер телефона">
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <button type="submit" class="button button-primary modal__button">
+          Отправить заявку
+        </button> 
+        <!-- /.button button-primary modal__button -->
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal-juvenali-two --> 
+
+  <div class="modal-junior">
+    <div class="modal__dialog">
+      <button class="modal-junior__close">
+
+      </button> 
+      <!-- /.modal__close -->
+      <h3 class="modal-junior__title">
+        Информация о «Юниоры»
+      </h3>
+      <form action="send.php" method="POST" class="form modal-junior__form">
+        <div class="input-group modal__input-group modal__input-aside">
+          <input type="text" name="userName" class="input modal__input" id="modal-beginer-user-name" placeholder="Ваше имя">
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <div class="input-group modal__input-group modal__input-top">
+          <input type="tel" name="userPhone" class="input modal__input" id="modal-beginer-user-phone" placeholder="Ваш номер телефона">
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <button type="submit" class="button button-primary modal__button">
+          Отправить заявку
+        </button> 
+        <!-- /.button button-primary modal__button -->
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal-junior -->
 
   <div class="modal-intensive">
     <div class="modal__dialog">

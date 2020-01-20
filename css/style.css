@@ -1107,6 +1107,266 @@ img {
 .input-group {
   text-align: center; }
 
+.modal-baby {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43, 43, 43, 0.6);
+  z-index: 199; }
+  .modal-baby--visible {
+    opacity: 1;
+    visibility: visible; }
+  .modal-baby__dialog {
+    position: relative;
+    max-width: 397px;
+    padding-bottom: 35px; }
+  .modal-baby__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    margin: -29px -29px 14px 14px;
+    background: transparent url("../img/close.svg") no-repeat center;
+    border: none;
+    cursor: pointer;
+    outline: none; }
+  .modal-baby__title {
+    margin: 0;
+    padding: 20px 52.1px;
+    background: #33b7d2;
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    color: #ffffff; }
+  .modal-baby__form {
+    padding: 0px 0px 30px 0px;
+    background: url("../img/modal/modal-bg.jpg") no-repeat center bottom; }
+  .modal-baby__input {
+    padding: 13px 137px 14px 25px; }
+    .modal-baby__input::placeholder {
+      color: #2b2b2b; }
+    .modal-baby__input-top {
+      padding-top: 15px; }
+    .modal-baby__input-aside {
+      padding-top: 45px; }
+  .modal-baby__button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 23px 71px;
+    font-family: 'Roboto Bold', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #243342; }
+
+.input-group {
+  text-align: center; }
+
+.modal-juvenali {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43, 43, 43, 0.6);
+  z-index: 199; }
+  .modal-juvenali--visible {
+    opacity: 1;
+    visibility: visible; }
+  .modal-juvenali__dialog {
+    position: relative;
+    max-width: 397px;
+    padding-bottom: 35px; }
+  .modal-juvenali__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    margin: -29px -29px 14px 14px;
+    background: transparent url("../img/close.svg") no-repeat center;
+    border: none;
+    cursor: pointer;
+    outline: none; }
+  .modal-juvenali__title {
+    margin: 0;
+    padding: 20px 52.1px;
+    background: #33b7d2;
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    color: #ffffff; }
+  .modal-juvenali__form {
+    padding: 0px 0px 30px 0px;
+    background: url("../img/modal/modal-bg.jpg") no-repeat center bottom; }
+  .modal-juvenali__input {
+    padding: 13px 137px 14px 25px; }
+    .modal-juvenali__input::placeholder {
+      color: #2b2b2b; }
+    .modal-juvenali__input-top {
+      padding-top: 15px; }
+    .modal-juvenali__input-aside {
+      padding-top: 45px; }
+  .modal-juvenali__button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 23px 71px;
+    font-family: 'Roboto Bold', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #243342; }
+
+.input-group {
+  text-align: center; }
+
+.modal-juvenali-two {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43, 43, 43, 0.6);
+  z-index: 199; }
+  .modal-juvenali-two--visible {
+    opacity: 1;
+    visibility: visible; }
+  .modal-juvenali-two__dialog {
+    position: relative;
+    max-width: 397px;
+    padding-bottom: 35px; }
+  .modal-juvenali-two__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    margin: -29px -29px 14px 14px;
+    background: transparent url("../img/close.svg") no-repeat center;
+    border: none;
+    cursor: pointer;
+    outline: none; }
+  .modal-juvenali-two__title {
+    margin: 0;
+    padding: 20px 32.1px;
+    background: #33b7d2;
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    color: #ffffff; }
+  .modal-juvenali-two__form {
+    padding: 0px 0px 30px 0px;
+    background: url("../img/modal/modal-bg.jpg") no-repeat center bottom; }
+  .modal-juvenali-two__input {
+    padding: 13px 137px 14px 25px; }
+    .modal-juvenali-two__input::placeholder {
+      color: #2b2b2b; }
+    .modal-juvenali-two__input-top {
+      padding-top: 15px; }
+    .modal-juvenali-two__input-aside {
+      padding-top: 45px; }
+  .modal-juvenali-two__button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 23px 71px;
+    font-family: 'Roboto Bold', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #243342; }
+
+.input-group {
+  text-align: center; }
+
+.modal-junior {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43, 43, 43, 0.6);
+  z-index: 199; }
+  .modal-junior--visible {
+    opacity: 1;
+    visibility: visible; }
+  .modal-junior__dialog {
+    position: relative;
+    max-width: 397px;
+    padding-bottom: 35px; }
+  .modal-junior__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    margin: -29px -29px 14px 14px;
+    background: transparent url("../img/close.svg") no-repeat center;
+    border: none;
+    cursor: pointer;
+    outline: none; }
+  .modal-junior__title {
+    margin: 0;
+    padding: 20px 32.1px;
+    background: #33b7d2;
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    color: #ffffff; }
+  .modal-junior__form {
+    padding: 0px 0px 30px 0px;
+    background: url("../img/modal/modal-bg.jpg") no-repeat center bottom; }
+  .modal-junior__input {
+    padding: 13px 137px 14px 25px; }
+    .modal-junior__input::placeholder {
+      color: #2b2b2b; }
+    .modal-junior__input-top {
+      padding-top: 15px; }
+    .modal-junior__input-aside {
+      padding-top: 45px; }
+  .modal-junior__button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 23px 71px;
+    font-family: 'Roboto Bold', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #243342; }
+
+.input-group {
+  text-align: center; }
+
 .modal-beginer {
   opacity: 0;
   visibility: hidden;

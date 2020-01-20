@@ -1,6 +1,8 @@
 .news
   margin-top: 33px
-  padding-bottom: 168px
+  padding-bottom: 48px
+  &-pagination
+    padding-bottom: 74px
   &__text
     &::after
       content: ''
@@ -28,7 +30,7 @@
     flex-wrap: wrap
     margin-bottom: 32px
     &__bottom
-      margin-bottom: 0px
+      margin-bottom: 32px
     &__text
       width: 100%
       max-width: 265px
@@ -69,44 +71,43 @@
   &-width
     max-width: 100%
     width: 73%
-.news-pagination
-  &__next, &__prev
-    max-width: 13px
-    height: 13px
-    opacity: 0.4
+.pagination
+  display: flex
+  align-items: center
   &__wrap
     display: flex
     justify-content: center
-    margin-top: 46px
-    &-list
-      position: relative
-      display: flex
-      align-items: center
-      padding: 10px 20px
-      list-style: none
-  &__list
-    &-item
-      width: 35px
-      height: 35px
-      line-height: 35px
-      border: 1px solid $sspaces
-      border-radius: 50%
-      text-align: center
-      cursor: pointer
-  &__number
-    width: 35px
-    height: 35px
-    text-align: center
-    line-height: 35px
-    margin: 0px 5px
+  &__item
+    width: 50px
+    height: 50px
+    padding: 16px
+    margin-left: 5px
+    border: 1px solid $darkg
+    border-radius: 50%
+    text-decoration: none
+    color: $darkg
+    &-left
+      padding-left: 20px
     &-active
-      background: $yello
       color: $dark
-    &-link
-      display: block
-      text-decoration: none
-      border: 1px solid $sspaces
-      border-radius: 50%
-      color: $sspaces
-      &:hover
-        background: $yello
+      border: none
+      background: $yellow
+  &__but
+    text-decoration: none
+    margin-left: 5px
+    font-size: 16px
+  &__prev , &__next
+    width: 50px
+    height: 50px
+    padding: 16px
+    border-radius: 50%
+    border: 1px solid $darkg
+    color: $darkg
+  &__prev
+    margin-right: 5px
+    &-images
+      opacity: 0.3
+  &__next
+    margin-left: 5px
+    &-images
+      opacity: 0.3

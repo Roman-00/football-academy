@@ -61,6 +61,17 @@ $(document).ready(function () {
     modalIntensive.toggleClass('modal-intensive--visible');
   });
 
+  //Третья модалка
+  var modalIntensive = $('.modal-light'),
+      modalBtn = $('[data-toggle=modal-light]'),
+      closeBtn = $('.modal-light__close');
+  modalBtn.on('click', function () {
+    modalIntensive.toggleClass('modal-light--visible');
+    });
+  closeBtn.on('click', function() {
+    modalIntensive.toggleClass('modal-light--visible');
+  });
+
   //Четвертая модалка
   var modalBaby = $('.modal-baby'),
       modalBtn = $('[data-toggle=modal-baby]'),
@@ -133,14 +144,20 @@ $(document).ready(function () {
       userName: {
         required: true,
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 12,
+      },
       // правило обьект
     },// сообщения
     messages: {
       userName: {
         required: "Заполните поле",
       },
-      userPhone: "Неверный номер",
+      userPhone: {
+        required: "Номер Обязательно",
+        minlength: "Не меньше 12 символов"
+      },
     },
     errorPlacement: function (error, element) {
       if (element.attr("type") == "checkbox") {
@@ -185,7 +202,10 @@ $(document).ready(function () {
         maxlength: 15,
         minlength: 2
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 12,
+      },
       // правило обьект
     },// сообщения
     messages: {
@@ -194,7 +214,10 @@ $(document).ready(function () {
         minlength: "Имя не должно быть короче 2 символов",
         maxlength: "Имя не должно превышать 15 символов"
       },
-      userPhone: "Номер Обязательно",
+      userPhone: {
+        required: "Номер Обязательно",
+        minlength: "Не меньше 12 символов"
+      },
     },
     errorPlacement: function (error, element) {
       if (element.attr("type") == "checkbox") {
@@ -239,7 +262,10 @@ $(document).ready(function () {
         maxlength: 15,
         minlength: 2
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 12,
+      },
       // правило обьект
     },// сообщения
     messages: {
@@ -248,7 +274,10 @@ $(document).ready(function () {
         minlength: "Имя не должно быть короче 2 символов",
         maxlength: "Имя не должно превышать 15 символов"
       },
-      userPhone: "Номер Обязательно",
+      userPhone: {
+        required: "Номер Обязательно",
+        minlength: "Не меньше 12 символов"
+      },
     },
     errorPlacement: function (error, element) {
       if (element.attr("type") == "checkbox") {
@@ -293,7 +322,10 @@ $(document).ready(function () {
         maxlength: 15,
         minlength: 2
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 12,
+      },
       // правило обьект
     },// сообщения
     messages: {
@@ -302,7 +334,10 @@ $(document).ready(function () {
         minlength: "Имя не должно быть короче 2 символов",
         maxlength: "Имя не должно превышать 15 символов"
       },
-      userPhone: "Номер Обязательно",
+      userPhone: {
+        required: "Номер Обязательно",
+        minlength: "Не меньше 12 символов"
+      },
     },
     errorPlacement: function (error, element) {
       if (element.attr("type") == "checkbox") {
@@ -347,7 +382,10 @@ $(document).ready(function () {
         maxlength: 15,
         minlength: 2
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 12,
+      },
       // правило обьект
     },// сообщения
     messages: {
@@ -356,7 +394,10 @@ $(document).ready(function () {
         minlength: "Имя не должно быть короче 2 символов",
         maxlength: "Имя не должно превышать 15 символов"
       },
-      userPhone: "Номер Обязательно",
+      userPhone: {
+        required: "Номер Обязательно",
+        minlength: "Не меньше 12 символов"
+      },
     },
     errorPlacement: function (error, element) {
       if (element.attr("type") == "checkbox") {
@@ -401,7 +442,10 @@ $(document).ready(function () {
         maxlength: 15,
         minlength: 2
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 12,
+      },
       // правило обьект
     },// сообщения
     messages: {
@@ -410,7 +454,10 @@ $(document).ready(function () {
         minlength: "Имя не должно быть короче 2 символов",
         maxlength: "Имя не должно превышать 15 символов"
       },
-      userPhone: "Номер Обязательно",
+      userPhone: {
+        required: "Номер Обязательно",
+        minlength: "Не меньше 12 символов"
+      },
     },
     errorPlacement: function (error, element) {
       if (element.attr("type") == "checkbox") {
@@ -453,14 +500,20 @@ $(document).ready(function () {
       userName: {
         required: true,
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 12,
+      },
       // правило обьект
     },// сообщения
     messages: {
       userName: {
         required: "Заполните поле",
       },
-      userPhone: "Неверный номер",
+      userPhone: {
+        required: "Номер Обязательно",
+        minlength: "Не меньше 12 символов"
+      },
     },
     errorPlacement: function (error, element) {
       if (element.attr("type") == "checkbox") {
@@ -496,6 +549,62 @@ $(document).ready(function () {
      },
   });
 
+  //Валидация Формы Light
+  $('.modal-light__form').validate({
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+      },
+      userPhone: {
+        required: true,
+        minlength: 12,
+      },
+      // правило обьект
+    },// сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+      },
+      userPhone: {
+        required: "Номер Обязательно",
+        minlength: "Не меньше 12 символов"
+      },
+    },
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+  
+       error.insertAfter($(element));
+    },
+    errorElement: "div",
+    errorClass: "invalid",
+
+    // Jquery Ajax form
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+         let ownModal = document.getElementById('ownModal');
+         ownModal.classList.add('active-own');
+         const RemoveOwnModal = () => {
+          ownModal.classList.remove('active-own')
+         };
+         setTimeout(RemoveOwnModal, 3000); 
+          $(form)[0].reset();
+          modalIntensive.removeClass('modal-light--visible');
+        },
+        error: function (response) {
+          console.error('Ошибка запроса! ' + response);
+          ym('65026879', 'reachGoal', 'button'); return true;
+        }
+      });
+     },
+  });
+
   //Валидация Формы Header
   $('.header__form').validate({
     rules: {
@@ -505,7 +614,10 @@ $(document).ready(function () {
         maxlength: 15,
         minlength: 2
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 12,
+      },
       // правило обьект
     },// сообщения
     messages: {
@@ -514,7 +626,10 @@ $(document).ready(function () {
         minlength: "Имя не должно быть короче 2 символов",
         maxlength: "Имя не должно превышать 15 символов"
       },
-      userPhone: "Номер Обязательно",
+      userPhone: {
+        required: "Номер Обязательно",
+        minlength: "Не меньше 12 символов"
+      },
     },
     errorPlacement: function (error, element) {
       if (element.attr("type") == "checkbox") {
@@ -559,7 +674,10 @@ $(document).ready(function () {
         maxlength: 15,
         minlength: 2
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 12,
+      },
       userEmail: "required",
       userMessage: "required",
       // правило обьект
@@ -570,7 +688,10 @@ $(document).ready(function () {
         minlength: "Имя не должно быть короче 2 символов",
         maxlength: "Имя не должно превышать 15 символов"
       },
-      userPhone: "Телефон обязателен",
+      userPhone: {
+        required: "Номер Обязательно",
+        minlength: "Не меньше 12 символов"
+      },
       userEmail: "E-mail обязателен",
       userMessage: "Введите сообщения",
     },

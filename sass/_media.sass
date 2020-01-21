@@ -51,6 +51,8 @@
       flex: 1 1 calc(50% - 30px)
       max-width: calc(50% - 30px)
       padding: 0 15px
+      &:last-of-type
+        margin: auto
   .groups
     &__row
       margin-top: 0
@@ -63,7 +65,8 @@
       margin-bottom: 29px
     &__training
       &-description
-        max-width: 230px
+        max-width: 200px
+        font-size: 12px
         margin-bottom: 40px
   .training
     &-title
@@ -137,6 +140,18 @@
         font-size: 28px
       &__description
         font-size: 20px
+  .news
+    &__text
+      &-icons
+        display: none
+    &-card
+      &__text
+        max-width: 100%
+        width: 60%
+  .questions
+    &__input
+      &-four
+        padding: 21px 10px 169px 22px
 @media screen and ( max-width:992px )
   .header
     &__title
@@ -171,6 +186,8 @@
       flex: 1 1 calc(100% - 30px)
       max-width: calc(100% - 30px)
       padding: 0 15px
+      &:last-of-type
+        margin: 0
   .ticket
     &__wrap
       justify-content: space-around
@@ -236,6 +253,56 @@
       margin-right: 17px
     &__button
       margin-top: 0px
+  .news
+    &__images
+      &-link
+        &:hover
+          text-decoration: none
+          color: $blue
+    &-card
+      &__text
+        max-width: 100%
+        width: 50%
+  .button
+    &:hover
+      background: $yello
+  .nav
+    &__item
+      &:hover
+        color: $lite
+        border-bottom: none
+  .social
+    &__icons
+      &-substrate
+        &:hover
+          background: none
+  .groups
+    &__button
+      &:hover
+        background: none
+        color: $yellow
+  .card
+    &__ticket
+      &:hover>.card__ticket-title 
+        background: $birch
+      &:hover
+        border: 1.5px solid $birch
+    &__groups
+      &:hover
+        border: 2px solid transparent
+  .button
+    &:hover
+      background: $yellow
+    &-primary
+      &:hover
+        background: $yellow
+  .contacts
+    &__button
+      &:hover
+        background: $yellow
+  button
+    &:hover
+      background: $yellow
 @media screen and ( max-width:760px )
   .header
     &__title
@@ -270,6 +337,24 @@
   .statistics
     &__button
       margin-top: 15px
+  .news
+    &-card
+      margin-right: 0px
+      margin: auto
+      display: block
+      &__text
+        display: block
+        margin: auto
+    &-wrapper
+      width: 100%
+      margin: auto
+      text-align: center
+  .questions
+    &__input
+      &-four
+        padding: 21px 0px 169px 22px
+  #questions-user-message
+    max-width: 440px
 @media screen and (max-width: 570px )
   .header
     &__title
@@ -403,6 +488,20 @@
       width: 30px
       height: 30px
       padding: 4px
+  .news
+    &-card
+      margin-right: 0px
+      margin: auto
+      display: block
+      &__text
+        display: block
+        margin: auto
+    &-wrapper
+      width: 100%
+      margin: auto
+      text-align: center
+  #questions-user-message
+    max-width: 260px
 @media screen and ( max-width:375px )
   .header
     &__input

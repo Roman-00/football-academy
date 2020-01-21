@@ -873,7 +873,7 @@ img {
 
 .card__title-intensive {
   padding: 29px 32px 28px 32px;
-  background: #33b7d2; }
+  background: #67b0bf; }
 
 .card__ticket {
   position: relative;
@@ -884,12 +884,12 @@ img {
   max-width: 360px;
   box-shadow: 0 0 9px rgba(0, 0, 0, 0.17);
   border: 1.5px solid #67b0bf; }
+  .card__ticket:hover > .card__ticket-title {
+    background: #33b7d2; }
   .card__ticket:hover {
     border: 1.5px solid #33b7d2; }
   .card__ticket-one {
     border: 1.5px solid #67b0bf; }
-  .card__ticket-two {
-    border: 1.5px solid #33b7d2; }
   .card__ticket-left {
     margin-right: 28px; }
   .card__ticket-button {
@@ -927,9 +927,6 @@ img {
 
 .card__title-transform {
   text-transform: uppercase; }
-
-.card__ticket > .card__title-light:hover {
-  background: #33b7d2; }
 
 .branches {
   padding: 48px 0px 67px 0px; }
@@ -1599,7 +1596,7 @@ img {
 
 .contacts-tab {
   background: url("../img/branches/branches-bg.png") no-repeat center; }
-  .contacts-tab__item {
+  .contacts-tab__items {
     max-width: 1080px;
     margin: auto; }
 

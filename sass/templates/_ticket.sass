@@ -31,7 +31,7 @@
       background: $birch
     &-intensive
       padding: 29px 32px 28px 32px
-      background: $azure
+      background: $birch
   &__ticket
     position: relative
     display: flex
@@ -41,12 +41,12 @@
     max-width: 360px
     box-shadow: 0 0 9px rgba(0, 0, 0, 0.17)
     border: 1.5px solid $birch
+    &:hover>.card__ticket-title 
+      background: $azure
     &:hover
       border: 1.5px solid $azure
     &-one
       border: 1.5px solid $birch
-    &-two
-      border: 1.5px solid $azure
     &-left
       margin-right: 28px
     &-button
@@ -84,5 +84,3 @@
   &__title
     &-transform
       text-transform: uppercase
-.card__ticket>.card__title-light:hover
-  background: $azure

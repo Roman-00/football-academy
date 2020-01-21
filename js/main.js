@@ -11,63 +11,27 @@ $(document).ready(function () {
   });
 
   $('.list').click(function(){
-    $('.column-one').toggleClass('column-list');
+    $('.column-one').addClass('column-list');
   });
 
   $('.list').click(function(){
-    $('.news-card__text').toggleClass('column-width');
+    $('.news-card__text').addClass('column-width');
   });
 
   $('.grid').click(function() {
-    $('.column-one').toggleClass('column-list');
+    $('.column-one').removeClass('column-list');
   });
 
   $('.grid').click(function() {
-    $('.news-card__text').toggleClass('column-width');
+    $('.news-card__text').removeClass('column-width');
   });
 
-  //Скрытие карт
-  var ticket = $('.ticket');
-  var ticketBoot = ticket.offset().top;
-  $(window).bind('scroll', function(){
-    var windowTop = $(this).scrollTop();
-    if (windowTop > ticketBoot) {
-      $('#map-one').html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A804e9842e81be7d7cae8fe1bea1e8663e62d4eea16f76eee5d407e9c81fb6629&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>')
-      $(window).unbind('scroll')
-    }
+  $('.list').click(function(){
+    $('.fa').toggleClass('fa-active');
   });
 
-  //Скрытие карт
-  var ticket = $('.ticket');
-  var ticketTop = ticket.offset().top;
-  $(window).bind('scroll', function(){
-    var windowTop = $(this).scrollTop();
-    if (windowTop > ticketTop) {
-      $('#map-two').html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A38014c39d234a806eafc07481668f628cd540dcae4eb849efbc9c37925d11e69&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>')
-      $(window).unbind('scroll')
-    }
-  });
-
-  //Скрытие карт
-  var ticket = $('.ticket');
-  var ticketTop = ticket.offset().top;
-  $(window).bind('scroll', function(){
-    var windowTop = $(this).scrollTop();
-    if (windowTop > ticketTop) {
-      $('#map-three').html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad24ad5d72b6ad069d987120e407e1fca2145d17f225c6b6eb52396e938d48635&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>')
-      $(window).unbind('scroll')
-    }
-  });
-
-  //Скрытие карт
-  var ticket = $('.ticket');
-  var ticketTop = ticket.offset().top;
-  $(window).bind('scroll', function(){
-    var windowTop = $(this).scrollTop();
-    if (windowTop > ticketTop) {
-      $('#map-four').html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aef9e6eacc1030dde44dad5122efa3df836014eb1cc96e9dc288ee62f413e08b2&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>')
-      $(window).unbind('scroll')
-    }
+  $('.grid').click(function(){
+    $('.fa').toggleClass('fa-active');
   });
 
   //Вторая модалка

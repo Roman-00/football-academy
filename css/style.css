@@ -713,7 +713,8 @@ img {
     color: #2b2b2b;
     text-align: center; }
   .training-title__text {
-    max-width: 354px; }
+    max-width: 354px;
+    margin-right: 15px; }
   .training__about {
     max-width: 555px; }
   .training__video-title {
@@ -956,7 +957,8 @@ img {
       outline: none;
       color: #2b2b2b; }
     .branches__tabs-map {
-      background: url("../img/branches/branches-bg.png") no-repeat center; }
+      background: url("../img/branches/branches-bg.png") no-repeat center;
+      background-size: 100%; }
 
 .tabs {
   margin-right: 20px; }
@@ -1908,6 +1910,13 @@ p.invalid {
     margin-left: 5px; }
     .pagination__next-images {
       opacity: 0.3; }
+
+.fa {
+  font-size: 18px;
+  color: #b2b2b2; }
+  .fa-active {
+    color: #33b7d2;
+    border: 1px solid #33b7d2; }
 
 .statistics {
   margin-top: 50px;

@@ -1911,6 +1911,51 @@ p.invalid {
     .pagination__next-images {
       opacity: 0.3; }
 
+.next {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center; }
+  .next__images {
+    width: 15px;
+    height: 15px; }
+
+.prev {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center; }
+  .prev__images {
+    width: 15px;
+    height: 15px; }
+
+.nav-pagination {
+  position: relative;
+  display: flex;
+  padding: 10px 20px;
+  list-style: none; }
+  .nav-pagination__item {
+    list-style: none;
+    line-height: 50px;
+    margin: 0 5px; }
+  .nav-pagination__link {
+    display: block;
+    text-decoration: none;
+    color: #898989;
+    border: 1px solid #898989;
+    border-radius: 50%; }
+
+.pageNumber {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center; }
+
+.page-active {
+  border-radius: 50%;
+  background: #ffd801;
+  color: #2b2b2b; }
+
 .fa {
   font-size: 18px;
   color: #b2b2b2; }

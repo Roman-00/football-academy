@@ -34,6 +34,11 @@ $(document).ready(function () {
     $('.fa').toggleClass('fa-active');
   });
 
+  //Пагинация
+  $('.next').click(function(){
+    $('.nav-pagination').find('.nav-pagination__link .page-active').next().addClass('page-active');
+  });
+
   //Вторая модалка
   var modalBeginer = $('.modal-beginer'),
       modalBtn = $('[data-toggle=modal-beginer]'),
